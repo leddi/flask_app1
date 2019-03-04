@@ -5,7 +5,7 @@ from flask import Flask
 # the all-important app variable:
 app = Flask(__name__)
 
-font = Figlet(font="block")
+font = Figlet(font="dotmatrix")
 
 @app.route('/')
 def main():
