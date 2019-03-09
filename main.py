@@ -5,13 +5,13 @@ from flask import Flask
 # the all-important app variable:
 app = Flask(__name__)
 
-font = Figlet(font="big")
+font = Figlet(font="smkeyboard")
 
 @app.route('/')
 def main():
     # get the message from the environmental variable $MESSAGE
     # or fall back to the string "no message specified"
-    message = os.getenv("MESSAGE", "Error in allen Sektoren")
+    message = os.getenv("MESSAGE", "0x2019.de")
 
     # render plain text nicely in HTML
     html_text = font.renderText(message)\
