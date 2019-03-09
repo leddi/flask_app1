@@ -11,7 +11,7 @@ font = Figlet(font="smkeyboard")
 def main():
     # get the message from the environmental variable $MESSAGE
     # or fall back to the string "no message specified"
-    message = os.getenv("MESSAGE", "0x2019.de")
+    message = os.getenv("MESSAGE", "www.0x2019.de")
 
     # render plain text nicely in HTML
     html_text = font.renderText(message)\
